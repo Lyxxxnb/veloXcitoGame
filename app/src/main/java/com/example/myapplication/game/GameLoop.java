@@ -49,6 +49,7 @@ public class GameLoop
         double lastFrame = System.nanoTime();
         double now;
 
+        // Test Kommentar für Git
         while (_gameState == GameStates.RUNNING)
         {
             now = System.nanoTime();
