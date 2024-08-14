@@ -1,0 +1,29 @@
+[33mcommit a6a48859faf35e638319684232257f4c0fa7f345[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mmaster[m[33m, [m[1;31morigin/master[m[33m, [m[1;31morigin/HEAD[m[33m)[m
+Author: lyxxxnb <niclas.bader@studium.uni-hamburg.de>
+Date:   Wed Aug 14 16:37:12 2024 +0200
+
+    Landscape mode
+
+[33mcommit 8b84ac469e304cf7a39f1dfe3d1b7ada957b61b5[m
+Author: lyxxxnb <niclas.bader@studium.uni-hamburg.de>
+Date:   Wed Aug 14 16:33:31 2024 +0200
+
+    Landscape mode
+
+[33mcommit a66a4989abd47004949e52a5276dad620867cba6[m
+Author: lyxxxnb <niclas.bader@studium.uni-hamburg.de>
+Date:   Wed Aug 14 16:25:54 2024 +0200
+
+    JavaDoc
+
+[33mcommit cb75af49fdd1de97f4e317ac835341517fa4fb7c[m
+Author: lyxxxnb <niclas.bader@studium.uni-hamburg.de>
+Date:   Wed Aug 14 15:57:22 2024 +0200
+
+    GameLoop + Refactorings
+
+[33mcommit 405a2fe465ca758f67df726fbfb216439af82d2e[m
+Author: lyxxxnb <niclas.bader@studium.uni-hamburg.de>
+Date:   Wed Aug 14 08:56:41 2024 +0200
+
+    -setup
