@@ -9,12 +9,16 @@ public class Game
 {
     private GameLoop _gameLoop;
 
-    private int _averageFPS;
+    private int _framesThisSecond;
+
+    private long _lastFrameCheck;
 
     private Player _player;
 
     public Game()
     {
+        _framesThisSecond = 0;
+        _lastFrameCheck = 0;
         _player = new Player();
         _gameLoop = new GameLoop(this::update);
         _gameLoop.startLoop();
@@ -25,23 +29,23 @@ public class Game
      */
     private void update()
     {
-        int frameUpdates = 0;
-        long startTime = System.currentTimeMillis();
-        int timeElapsed = 0;
-
-        Log.d("GameLoopTest", "Moin Meister");
-
-        //timeElapsed =
-        //_averageFPS = frameUpdates /
+        showFPS();
     }
 
     /**
      * gibt die Anzahl der FPS zurück
      * @return durchschnittliche FPS
      */
-    private double getAverageFPS()
+    public void showFPS()
     {
-        return _averageFPS;
+        _framesThisSecond++;
+        long now = System.currentTimeMillis();
+        if (now - _lastFrameCheck >= 1000)
+        {
+            _lastFrameCheck = now;
+            Log.d("FPS", "FPS: " + ((Integer)_framesThisSecond).toString());
+            _framesThisSecond = 0;
+        }
     }
 
     /**
