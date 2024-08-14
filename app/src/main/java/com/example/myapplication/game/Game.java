@@ -29,7 +29,7 @@ public class Game
         long startTime = System.currentTimeMillis();
         int timeElapsed = 0;
 
-        Log.d("test", "Moin Meister");
+        Log.d("GameLoopTest", "Moin Meister");
 
         //timeElapsed =
         //_averageFPS = frameUpdates /

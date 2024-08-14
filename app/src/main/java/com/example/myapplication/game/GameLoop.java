@@ -20,7 +20,6 @@ public class GameLoop
     public GameLoop(Update update)
     {
         _update = update;
-        _gameThread = new Thread(this::run);
     }
 
     /**
@@ -29,6 +28,7 @@ public class GameLoop
     public void startLoop()
     {
         _gameState = GameStates.RUNNING;
+        _gameThread = new Thread(this::run);
         _gameThread.start();
     }
 
@@ -40,6 +40,11 @@ public class GameLoop
         _gameState = GameStates.STOPPED;
     }
 
+    public boolean gameIsRunning()
+    {
+        return _gameState == GameStates.RUNNING;
+    }
+
     /**
      * Dauerschleife, die das game jeden Frame updatet
      */
@@ -49,8 +54,7 @@ public class GameLoop
         double lastFrame = System.nanoTime();
         double now;
 
-        // ;^)
-        while (_gameState == GameStates.RUNNING)
+        while (gameIsRunning())
         {
             now = System.nanoTime();
             if (now - lastFrame >= timePerFrame)
