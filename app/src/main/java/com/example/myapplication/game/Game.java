@@ -2,6 +2,9 @@ package com.example.myapplication.game;
 
 import android.util.Log;
 
+/**
+ * Die Main Klasse für das Game, von der aus also Komponenten zusammengefügt und gesteuert werden
+ */
 public class Game
 {
     private GameLoop _gameLoop;
@@ -17,6 +20,9 @@ public class Game
         _gameLoop.startLoop();
     }
 
+    /**
+     * Die Update Methode, in der alle Dynamischen Elemente des Spiels aktualisiert werden
+     */
     private void update()
     {
         int frameUpdates = 0;
@@ -29,11 +35,19 @@ public class Game
         //_averageFPS = frameUpdates /
     }
 
+    /**
+     * gibt die Anzahl der FPS zurück
+     * @return durchschnittliche FPS
+     */
     private double getAverageFPS()
     {
         return _averageFPS;
     }
 
+    /**
+     * Pausiert das Spiel (funktioniert momentan nicht)
+     */
+    //TODO: Methode zum laufen bringen
     public void pauseGame()
     {
         _gameLoop.stopLoop();

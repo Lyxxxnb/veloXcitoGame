@@ -6,7 +6,9 @@ import android.widget.ImageButton;
 
 import com.example.myapplication.R;
 
-
+/**
+ * Die Main Activity, auf der sich das Menü befindet
+ */
 public class MenuActivity extends SuperActivity
 {
     private ImageButton settingsButton;

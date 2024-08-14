@@ -6,10 +6,14 @@ import android.widget.Button;
 import com.example.myapplication.R;
 import com.example.myapplication.game.Game;
 
+/**
+ * Die Activity auf der das Game stattfindet
+ */
 public class GameActivity extends SuperActivity
 {
     private Game _game;
     private Button _testButton;
+
     public GameActivity()
     {
         _contentView = R.layout.activity_game;

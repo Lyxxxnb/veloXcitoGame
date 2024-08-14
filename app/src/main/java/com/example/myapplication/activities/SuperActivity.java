@@ -13,6 +13,9 @@ import androidx.core.view.WindowInsetsControllerCompat;
 
 import com.example.myapplication.R;
 
+/**
+ * Activity "Schablone" in der Das startVerhalten für alle Activities festgesetzt wird
+ */
 public abstract class SuperActivity extends AppCompatActivity
 {
     protected int _contentView;

@@ -4,6 +4,9 @@ import android.os.Bundle;
 
 import com.example.myapplication.R;
 
+/**
+ * Activity auf der Die Einstellungen zu sehen sind
+ */
 public class SettingsActivity extends SuperActivity
 {
 
